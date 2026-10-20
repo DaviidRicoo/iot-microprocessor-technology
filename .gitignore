@@ -1,5 +1,50 @@
-# Object file
-*.o
+---
 
-# Ada Library Information
-*.ali
+### 2. `.gitignore` (Optimizado para C/C++, Arduino y PlatformIO)
+
+```gitignore
+# ==========================================
+# Archivos de compilación C/C++ y Binarios
+# ==========================================
+*.o
+*.obj
+*.elf
+*.bin
+*.hex
+*.out
+*.a
+*.lib
+
+# ==========================================
+# Entornos PlatformIO y Arduino IDE
+# ==========================================
+.pio/
+.pioenvs/
+.piolibdeps/
+*.ino.cpp
+*.ino.hex
+build/
+
+# ==========================================
+# Claves privadas y credenciales de Wi-Fi
+# ==========================================
+secrets.h
+config.h
+.env
+
+# ==========================================
+# Editores e IDEs (VS Code, CLion, Proteus)
+# ==========================================
+.vscode/.browse.c_cpp.db*
+.vscode/ipch/
+.idea/
+*.pdsbak
+*.Workspace
+
+# ==========================================
+# Archivos del Sistema Operativo
+# ==========================================
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
